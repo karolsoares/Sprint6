@@ -32,4 +32,36 @@ describe("Teste na camada de Cadastro pelo botão 'Cadastro'", () => {
     it("Validando campo preencher Nome",() =>{
         CommerciCadastro.preencher_nome()
     })
+
+    it("Validando campo Data de nacimento",() =>{
+        CommerciCadastro.preencher_data_de_nascimento()
+    })
+
+    it("Validando campo CPF",() =>{
+        CommerciCadastro.cpf()
+    })
+
+    it("Validando campo Telefone fixo",() =>{
+        CommerciCadastro.telefone_fixo()
+    })
+
+    it("Validando campo Celular",() =>{
+        CommerciCadastro.celular()
+    })
+
+    it("Validando campo E-mail",() =>{
+        CommerciCadastro.email()
+    })
+
+    it("Validando campo Digite novamente",() =>{
+        CommerciCadastro.digitar_novamente_email()
+    })
+
+    it("Validando campo Senha",() =>{
+        CommerciCadastro.senha()
+    })
+
+    it("Validando campo Digitar Novamente(SENHA)",() =>{
+        CommerciCadastro.digitar_novamente_senha()
+    })
 })

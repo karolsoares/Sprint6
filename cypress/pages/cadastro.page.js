@@ -6,6 +6,14 @@ const BUTTON_CADASTRAR= ".botao-commerce.botao-novo-cadastro.pointer"
 const BUTTON_CADASTRO= "[data-tray-tst= cadastro]"
 const NOME= "#pf_nome_cliente"
 const EMAIL_CADASTRO= "#email_cadastro"
+const DATA_DE_NASCIMENTO="#pf_data_nascimento"
+const CPF= "#pf_cpf_cliente"
+const TELEFONE_FIXO= "#telefone_cliente"
+const CELULAR= "#telefone_cliente_2"
+const EMAIL_CLIENTE= "#email_cliente"
+const REPETIR_EMAIL="#email_cliente2"
+const SENHA= "#senha_cliente"
+const REPETIR_SENHA= "#senha_cliente2"
 
 export default class CommerciCadastro extends Base {
 
@@ -26,7 +34,39 @@ export default class CommerciCadastro extends Base {
     }
 
     static preencher_nome(){
-        super.typeValue(NOME, "mariana@hotmail.com")
+        super.typeValue(NOME, "Mariana Rodrigues")
+    }
+
+    static preencher_data_de_nascimento(){
+        super.typeValue(DATA_DE_NASCIMENTO, "151203")
+    }
+
+    static cpf(){
+        super.typeValue(CPF, "33788977655")
+    }
+
+    static telefone_fixo(){
+        super.typeValue(TELEFONE_FIXO,"5577882233")
+    }
+
+    static celular(){
+        super.typeValue(CELULAR,"5567894563")
+    }
+
+    static email(){
+        super.typeValue(EMAIL_CLIENTE,"mariana@hotmail.com")
+    }
+
+    static digitar_novamente_email(){
+        super.typeValue(REPETIR_EMAIL,"mariana@hotmail.com")
+    }
+
+    static senha(){
+        super.typeValue(SENHA,"Mariana123#")
+    }
+
+    static digitar_novamente_senha(){
+        super.typeValue(REPETIR_SENHA,"Mariana123#")
     }
 }
 
